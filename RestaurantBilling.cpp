@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
+    //Author : Yaswanth Devabaktuni
+    //LinkedIn : https://www.linkedin.com/in/yaswanthdevabaktuni/
     int choice,val=0;
     int q[29],i,total=0;
     int c[29]={280,330,385,410,450,430,185,195,235,235,270,270,270,270,300,300,180,190,190,230,180,270,240,230,270,240,210,150,180};
