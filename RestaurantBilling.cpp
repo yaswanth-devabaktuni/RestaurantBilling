@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-    int choice,val;
-    int q[29],i,total;
-    int c[29]={280,330,390,410,450,430,185,195,235,235,270,270,270,270,300,300,180,190,190,230,180,270,240,230,270,240,210,150,180};
+    int choice,val=0;
+    int q[29],i,total=0;
+    int c[29]={280,330,385,410,450,430,185,195,235,235,270,270,270,270,300,300,180,190,190,230,180,270,240,230,270,240,210,150,180};
     for(i=0;i<29;i++)
     {
         q[i]=0;
@@ -43,17 +43,20 @@ int main()
     string name;
     while(true)
     {
+        cout<<"S.No\tType\n";
         cout<<"1\tBiryani\n";
         cout<<"2\tStarters\n";
         cout<<"3\tCurries\n";
         cout<<"4\tFried Rice\n";
         cout<<"0\tBill\n";
+        cout<<"Enter your choice\n";
         cin>>choice;
         switch(choice)
         {
             case 1:
                 while(choice!=11)
                 {
+                    cout<<"S.No\tType\t\t\t\tPrice\n";
                     cout<<"5 \tVeg Biryani             \t"<<c[0]<<endl;
                     cout<<"6 \tSpecial Veg Biryani     \t"<<c[1]<<endl;
                     cout<<"7 \tChicken Special Biryani \t"<<c[2]<<endl;
@@ -61,6 +64,7 @@ int main()
                     cout<<"9 \tMutton Special Biryani  \t"<<c[4]<<endl;
                     cout<<"10\tPrawns Biryani          \t"<<c[5]<<endl;
                     cout<<"11\tExit"<<endl;
+                    cout<<"Enter your choice\n";
                     cin>>choice;
                     switch (choice)
                     {
@@ -105,6 +109,7 @@ int main()
             case 2:
                 while(choice!=22)
                 {
+                    cout<<"S.No\tType\t\t\tPrice\n";
                     cout<<"12\tChilli Gobi           \t"<<c[6]<<endl;
                     cout<<"13\tPaneer 65             \t"<<c[7]<<endl;
                     cout<<"14\tVeg Manchurian        \t"<<c[8]<<endl;
@@ -116,6 +121,7 @@ int main()
                     cout<<"20\tApollo Fish           \t"<<c[14]<<endl;
                     cout<<"21\tChilli Prawns         \t"<<c[15]<<endl;
                     cout<<"22\tExit\n";
+                    cout<<"Enter your choice\n";
                     cin>>choice;
                     switch (choice)
                     {
@@ -180,6 +186,7 @@ int main()
             case 3:
                 while(choice!=33)
                 {
+                    cout<<"S.No\tType\t\t\tPrice\n";
                     cout<<"23\tPalak Paneer          \t"<<c[16]<<endl;
                     cout<<"24\tMushroom Masala       \t"<<c[17]<<endl;
                     cout<<"25\tPaneer Tikka          \t"<<c[18]<<endl;
@@ -191,6 +198,7 @@ int main()
                     cout<<"31\tPrawns Curry          \t"<<c[24]<<endl;
                     cout<<"32\tKadai Chicken         \t"<<c[25]<<endl;
                     cout<<"33\tExit\n";
+                    cout<<"Enter your choice\n";
                     cin>>choice;
                     switch (choice)
                     {
@@ -255,10 +263,12 @@ int main()
             case 4:
                 while(choice!=37)
                 {
+                    cout<<"S.No\tType\t\t\tPrice\n";
                     cout<<"34\tChicken Fried Rice    \t"<<c[26]<<endl;
                     cout<<"35\tVeg Fried Rice        \t"<<c[27]<<endl;
                     cout<<"36\tEgg Fried Rice        \t"<<c[28]<<endl;
                     cout<<"37\tExit\n";
+                    cout<<"Enter your choice\n";
                     cin>>choice;
                     switch (choice)
                     {
@@ -287,7 +297,8 @@ int main()
                 break;
             case 0:
                 cout<<"Please enter your name\n";
-                cin>>name;
+                cin.ignore();
+                getline(cin,name);
                 cout<<"Please enter your mobile number\n";
                 cin>>num;
                 cout<<"_________________________________________________________________________________________________\n";
